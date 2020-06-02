@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.asen.codec.VideoCamera2Activity">
+
+    <TextureView
+        android:id="@+id/previewSurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right"
+        android:orientation="vertical">
+
+        <ToggleButton
+            android:id="@+id/btn_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorLink="@android:color/holo_red_light"
+            android:textOff="开始录制"
+            android:textOn="结束录制" />
+
+        <ToggleButton
+            android:id="@+id/btn_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorLink="@android:color/holo_red_light"
+            android:textOff="打开相机"
+            android:textOn="关闭相机" />
+    </LinearLayout>
+
+
+</FrameLayout>
