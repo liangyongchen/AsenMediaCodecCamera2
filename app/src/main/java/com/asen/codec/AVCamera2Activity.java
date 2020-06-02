@@ -238,7 +238,7 @@ public class AVCamera2Activity extends AppCompatActivity {
                 public void onConfigured(@NonNull CameraCaptureSession session) {
                     try {
                         mPreviewSession = session;
-                        // 拍照设置，只有执行 mPreviewSession.capture(） 方法才在 ImageReader.setOnImageAvailableListener 返回图片监听
+                        // 拍照设置，执行 mPreviewSession.capture(） 方法才在调用 ImageReader.setOnImageAvailableListener
                         mPreviewBuilder.set(CaptureRequest.CONTROL_AF_MODE,
                                 CameraMetadata.CONTROL_AF_MODE_CONTINUOUS_PICTURE);
                         mPreviewBuilder.set(CaptureRequest.CONTROL_AE_MODE,
